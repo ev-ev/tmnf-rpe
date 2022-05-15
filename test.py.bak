@@ -40,7 +40,7 @@ if version >= 3:
         userDataSize = uint32(file.read(4))
         print('User data size:',userDataSize)
         userData = {'numHeaderChunks':uint32(file.read(4)),
-                    'HeaderEntry':[uint32(file.read(4)),uint32(file.read(4))]
+                    'HeaderEntry':[uint32(file.read(4)),uint32(file.read(4)),uint32(file.read(4)),uint32(file.read(4))]
                     }
         print(userData)
 print('\n\n\nend')
